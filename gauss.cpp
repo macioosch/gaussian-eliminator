@@ -46,7 +46,7 @@ int gauss(double **t, int m, int n, double *w)
 
 int main()
 {
-    const int m=2, n=3;
+    const int m=3, n=4;
     double **t, *w;
 
     w = new double[m];
@@ -54,8 +54,9 @@ int main()
     for (int i=0; i<m; ++i)
         t[i] = new double[n];
 
-    t[0][0]=-1; t[0][1]= 1; t[0][2]=-1;
-    t[1][0]=-2; t[1][1]= 1; t[1][2]= 2;
+    t[0][0]= 0; t[0][1]= 0; t[0][2]= 1; t[0][3]= 0;
+    t[1][0]= 1; t[1][1]= 1; t[1][2]= 1; t[1][3]= 2;
+    t[2][0]= 4; t[2][1]= 2; t[2][2]= 1; t[2][3]= 2;
 
     cout << setprecision(4);
 
