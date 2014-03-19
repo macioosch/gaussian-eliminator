@@ -1,2 +1,4 @@
 all:
-	gcc gauss.cpp -o gauss
+	clang++ gauss.cpp -o gauss
+debug:
+	clang++ -g gauss.cpp -o gauss
